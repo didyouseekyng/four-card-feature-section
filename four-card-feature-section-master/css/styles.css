@@ -1,0 +1,162 @@
+/*HTML ELEMENTS*/
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: .937rem;
+	height: 100%;
+}
+
+body {
+	box-sizing: border-box;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	text-align: left;
+}
+
+/*GENERAL CLASSES*/
+
+.heading-color {
+	font-size: 16px;
+	color: hsl(234, 12%, 34%);
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.border {
+	padding: 20px 30px 60px;
+	border-radius: 3.5px;
+	border-top: solid 3.2px;
+	color: hsl(229, 6%, 66%);
+	margin-bottom: 40px;
+	box-shadow: 8px 9px 20px 1px rgba(0, 0, 0, 0.19);
+}
+
+.p1 {
+	color: hsl(229, 6%, 66%);
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.8;
+}
+
+
+/*MAIN CONTENT*/
+
+.parent {
+	line-height: 1.2;
+	margin: 50px auto;
+	padding: 50px 40px;
+	max-width: 375px;
+	min-width: 375px;
+}
+
+.parent img {
+	height: 50px;
+	width: 50px;
+	position: relative;
+	left: 176px;
+	top: 30px;
+}
+
+.first-child {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.font-weight {
+	font-size: 24px;
+	font-weight: 280;
+	color: hsl(234, 12%, 40%);
+}
+
+.bold-h1 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.first-child-p {
+	color: hsl(229, 6%, 66%);
+	line-height: 1.4;
+	font-weight: 290;
+}
+
+.second-child {
+	border-top-color: hsl(180, 62%, 55%);
+}
+
+.third-child {
+	border-top-color: hsl(0, 78%, 62%);
+}
+
+.fourth-child {
+	border-top-color: hsl(34, 97%, 64%);
+}
+
+.fifth-child {
+	border-top-color: hsl(212, 86%, 64%);
+}
+
+.attribution {
+	padding: 50px 40px;
+	text-align: center;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (min-width:991px) {
+
+	.parent {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1024px;
+	}
+
+	.first-child {
+		text-align: center;
+		margin: 5px auto 50px;
+	}
+
+	.font-weight {
+		font-size: 26px;
+		padding: 3px;
+	}
+
+	.bold-h1 {
+		font-size: 26px;
+		padding: 4px;
+	}
+
+	.first-child-p {
+		font-size: 13px;
+		font-weight: 290;
+		width: 33em;
+	}
+
+	.flex-box {
+		display: flex;
+		align-items: center;
+	}
+
+	.border {
+		margin: 10px 8px;
+		width: 20em;
+	}
+
+	.p1 {
+		font-size: 11px;
+	}
+
+	.inner-flex {
+		display: flex;
+		flex-direction: column;
+	}
+
+}
